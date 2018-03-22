@@ -1,0 +1,38 @@
+{% extends "form1.html" %}
+
+
+   {% block content %}
+
+
+<div class="container">
+    <table class="table table-bordered">
+
+    <thead>
+      <tr>
+        <th>StudentId</th>
+           <th>StudentName</th>
+        <th>Dept</th>
+        <th>Rank</th>
+          <th>Score</th>
+      </tr>
+    </thead>
+         <tbody>
+
+         {%for val in StudentInfo %}
+         <tr>
+             <td>{{val.studentId}}</td>
+              <td>{{val.studentId__studentName}}</td>
+             <td>{{val.studentId__CourseID__courseName}}</td>
+                <td>{{val.rankId_id__Desc}}</td>
+                <td>{{val.Score}}</td>
+             </tr>
+         {%endfor%}
+
+
+         </tbody>
+
+
+</table>
+    </div>
+
+   {% endblock %}

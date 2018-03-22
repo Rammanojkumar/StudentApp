@@ -1,0 +1,2 @@
+-e git+https://github.com/django/django.git@7ec0fdf62afd565dd9a888300e7e33d0bf3e5fd5#egg=Django
+pytz==2018.3
